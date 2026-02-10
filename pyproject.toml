@@ -30,7 +30,6 @@ dependencies = [
     'tomli_w',
     'setuptools'
 ]
-dynamic = ['version']
 
 [project.urls]
 Documentation = 'https://dotdrop.readthedocs.io'
@@ -43,18 +42,6 @@ test = ['coverage', 'pytest', 'pytest-cov']
 [project.scripts]
 dotdrop = 'dotdrop:main'
 
-#[tool.setuptools.dynamic]
-#version = {attr = 'dotdrop.version.__version__'}
-
-#[tool.setuptools.packages.find]
-#include = ['dotdrop']
-
-#[build-system]
-#requires = ['setuptools']
-#build-backend = 'setuptools.build_meta'
-
-## ------------------
-## PIXI
 [tool.hatch.version]
 path = "dotdrop/version.py"
 
@@ -62,15 +49,14 @@ path = "dotdrop/version.py"
 build-backend = "hatchling.build"
 requires = ["hatchling"]
 
+## ------------------
+## PIXI
 [tool.pixi.workspace]
 name = "dotdrop"
 version = "1.15.0"
 channels = ["conda-forge", "pypi"]
 platforms = ["linux-64"]
 preview = ["pixi-build"]
-
-#[tool.pixi.dependencies]
-#setuptools = "*"
 
 [tool.pixi.pypi-dependencies]
 dotdrop = { path = ".", editable = true }
