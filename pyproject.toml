@@ -48,9 +48,9 @@ version = {attr = 'dotdrop.version.__version__'}
 [tool.setuptools.packages.find]
 include = ['dotdrop']
 
-#[build-system]
-#requires = ['setuptools']
-#build-backend = 'setuptools.build_meta'
+[build-system]
+requires = ['setuptools']
+build-backend = 'setuptools.build_meta'
 
 ## ------------------
 ## PIXI

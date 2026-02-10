@@ -113,7 +113,7 @@ packages:
 - pypi: ./
   name: dotdrop
   version: 1.15.0
-  sha256: 542bb05adf5a8f8900f5df25c1a1c7580d23180148f164e44ec921ff698f8edc
+  sha256: b7157fbf68e42bb4ecd9b8c1df7c862b3f3c94d483832a258409750260030f71
   requires_dist:
   - jinja2
   - distro
