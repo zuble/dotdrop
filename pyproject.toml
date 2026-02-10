@@ -30,6 +30,7 @@ dependencies = [
     'tomli_w',
     'setuptools'
 ]
+dynamic = ['version']
 
 [project.urls]
 Documentation = 'https://dotdrop.readthedocs.io'
